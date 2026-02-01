@@ -6,7 +6,7 @@
     margin-left: auto;
     margin-right: auto;
     border: none;
-    background-color: white;
+  background-color: rgba(255,255,255,0.06);
     border-radius: 15%;
 
 }
@@ -18,10 +18,12 @@
     text-decoration: none;
     color:rgb(67, 3, 79);
 }
+/* legacy stylesheet removed — Tailwind CSS is used now */
+
 .button 
 {
-    color: rgb(232, 232, 239);
-    background-color: rgb(40, 103, 148);
+  color: rgb(232, 232, 239);
+  background: linear-gradient(90deg, rgba(10,10,10,0.8), rgba(4,62,126,0.9));
     border-radius: .75rem;
     font-size: 30px;
     border: none;
@@ -51,18 +53,18 @@
   }
   .sktitle 
   {
-    font-size: 70px;
+    font-size: 48px;
     text-decoration: underline rgb(0, 162, 255);
     margin-bottom: 20px;
   }
-  .skcard
-  {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 170px;
+  .skgrid{
+    display:flex;
+    gap:24px;
+    justify-content:center;
+    align-items:center;
+    margin-top:40px;
+    margin-bottom:80px;
+    flex-wrap:wrap;
   }
   .table
   {
@@ -96,7 +98,7 @@
     margin-left: auto;
     margin-right: auto;
     height: 100vh;
-    color: black;
+    color: #e6eefc;
   }
   
   .about_wrap {
@@ -166,24 +168,28 @@
     margin-bottom: 2rem;
   }
   
-  .wrapper {
-    margin: 2rem;
-    display: grid;
-    gap: 2.5rem;
-    grid-template-columns: 100%;
-    justify-content: center;
+  .projects_grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap:1.5rem;
+    width:100%;
+    max-width:1000px;
+    margin:0 auto;
+    padding:1rem;
   }
   .card__project {
-    background-color: white;
-    box-shadow: 0 0 10px 5px #e1e5ee;
-    border-radius: 0.2rem;
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+    box-shadow: 0 6px 24px rgba(2,6,23,0.6);
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.5s ease;
+    text-align: left;
+    padding:1rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    color: #e6eefc;
   }
+
+  .card__project:hover{ transform: translateY(-6px); box-shadow: 0 12px 40px rgba(2,6,23,0.8);} 
 
   /* .card__img {
     width: 100px;
@@ -197,8 +203,8 @@
     height: auto;
   }
   .card__title {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
     line-height: 1.5rem;
     margin-bottom: 0.6rem;
   }
@@ -213,6 +219,21 @@
     width: 30px;
     margin-right: 12px;
   }
+  .skill-card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+    padding:16px 20px;
+    border-radius:10px;
+    background: rgba(255,255,255,0.03);
+    color:#e6eefc;
+    min-width:140px;
+  }
+  .skill-icon{opacity:0.95}
+  .skill-name{font-weight:600}
+  .project-link{display:inline-block;margin-top:12px;color:#a6d1ff;text-decoration:none}
+  .project-link:hover{text-decoration:underline}
   .card__description {
     line-height: 1.2rem;
   }
@@ -235,8 +256,8 @@
   filter: invert(97%) sepia(94%) saturate(26%) hue-rotate(57deg) brightness(106%) contrast(107%);
 }
 .footer {
-  background-color: rgb(40, 103, 148);
-  color: rgb(254, 255, 255);
+  background: linear-gradient(90deg, rgba(7,18,39,0.9), rgba(4,62,126,0.9));
+  color: #ffffff;
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
@@ -252,9 +273,9 @@
 }
 
 .footer__icon {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #fff;
-  margin: 0 var(--mb-2);
+  margin: 0 12px;
 }
 
 .footer__copy {
@@ -290,4 +311,10 @@
   .wrapper {
     grid-template-columns: 50% 50%;
   }
+}
+body{
+  min-height:100vh;
+  background: linear-gradient(135deg, #000000 0%, #042e77 100%);
+  color: #e6eefc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 }
