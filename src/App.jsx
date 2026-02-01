@@ -7,15 +7,15 @@ import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main style={{ marginTop: "70px" }}>
+      <main className="flex-grow pt-20">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
         </Routes>
       </main>
-    </>
+    </div>
   );
 }

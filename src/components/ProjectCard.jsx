@@ -1,4 +1,5 @@
 import React from "react";
+import { ExternalLink } from "lucide-react";
 
 export default function ProjectCard({
   title,
@@ -7,25 +8,38 @@ export default function ProjectCard({
   Icons = [],
 }) {
   return (
-    <article className="card__project modern">
-      <div className="card__body">
-        <h3 className="card__title">{title}</h3>
-        {description && <p className="card__description">{description}</p>}
-        <div className="project_techstack">
-          {Icons.map((Icon, i) => (
-            <Icon key={i} size={20} style={{ marginRight: 12 }} />
-          ))}
+    <article className="glass-card overflow-hidden group hover:border-blue-500/50">
+      <div className="p-8 space-y-6">
+        <div className="flex justify-between items-start">
+          <h3 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
+            {title}
+          </h3>
+          <div className="flex gap-3 text-sky-400">
+            {Icons.map((Icon, i) => (
+              <Icon key={i} size={20} />
+            ))}
+          </div>
         </div>
-        <div className="project_links">
+        
+        {description && (
+          <p className="text-gray-400 leading-relaxed min-h-[4rem]">
+            {description}
+          </p>
+        )}
+        
+        <div className="flex gap-4 pt-2">
           {links.map((l, i) => (
             <a
               key={i}
               href={l.href}
               target="_blank"
               rel="noreferrer"
-              className="project-link"
+              className="text-sm font-semibold text-blue-500 hover:text-blue-400 flex items-center gap-2 group/link"
             >
-              {l.label}
+              <span className="border-b border-transparent group-hover/link:border-blue-400 transition-all">
+                {l.label}
+              </span>
+              <ExternalLink size={14} />
             </a>
           ))}
         </div>

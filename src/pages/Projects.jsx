@@ -5,21 +5,21 @@ import { FileCode, Monitor, ExternalLink } from "lucide-react";
 
 const PROJECTS = [
   {
-    title: "Virat Kholi Clone",
-    description: "A static clone of Virat Kohli's page built with HTML/CSS.",
+    title: "EventHub",
+    description: "A full-stack event management platform to address event coordination challenges faced by organizations in managing and streamlining events.",
     links: [
       {
-        href: "https://mohanmeesala2005.github.io/mohan-edc-2/",
-        label: "Live",
+        href: "https://github.com/mohanmeesala2005/EventHub.git",
+        label: "GitHub Link",
       },
     ],
     Icons: [FileCode, Monitor],
   },
   {
-    title: "EDC Website Home Page Clone",
-    description: "Homepage clone for EDC site showcasing layout and styles.",
+    title: "Intelligent ChatBot",
+    description: "AI-driven retrieval and generation (RAG) to build intelligent chat responses.",
     links: [
-      { href: "https://mohanmeesala2005.github.io/edcsite/", label: "Live" },
+      { href: "https://github.com/mohanmeesala2005/RAG_Chatbot.git", label: "Github Link" },
     ],
     Icons: [FileCode, Monitor],
   },
@@ -27,15 +27,15 @@ const PROJECTS = [
 
 export default function Projects() {
   return (
-    <div id="projects" className="projects_section modern-page">
-      <div className="projects_title_wrap">
-        <p className="projects_title">Projects</p>
-        <p className="projects_description">
-          These are the Projects I've worked on
+    <div id="projects" className="container-custom py-20 min-h-[calc(100vh-80px)]">
+      <div className="text-center space-y-4 mb-20">
+        <h2 className="section-title">Selected Projects</h2>
+        <p className="text-sky-300 text-lg max-w-2xl mx-auto">
+          A showcase of some of my technical work and software development journey.
         </p>
       </div>
 
-      <div className="projects_grid">
+      <div className="grid md:grid-cols-2 gap-8">
         {PROJECTS.map((p) => (
           <ProjectCard
             key={p.title}
