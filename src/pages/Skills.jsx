@@ -67,6 +67,12 @@ const SKILLS = [
   },{
     title:"Keras",
     image:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg"
+  },{
+    title:"Streamlit",
+    image:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg"
+  },{
+    title:"Docker",
+    image:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
   }
 ];
 
