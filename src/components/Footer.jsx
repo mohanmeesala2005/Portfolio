@@ -1,11 +1,16 @@
 import React from "react";
-import { Github, Linkedin, Instagram } from "lucide-react";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="mt-auto py-12 border-t border-white/5 bg-black/20" id="foot">
+    <footer
+      className="mt-auto py-12 border-t border-white/5 bg-black/20"
+      id="foot"
+    >
       <div className="container-custom flex flex-col items-center gap-6">
-        <h2 className="text-xl font-bold text-white tracking-widest uppercase">Mohan Portfolio</h2>
+        <h2 className="text-xl font-bold text-white tracking-widest uppercase">
+          Mohan Portfolio
+        </h2>
         <div className="flex gap-6">
           <a
             href="https://github.com/mohanmeesala2005"
@@ -24,12 +29,12 @@ export default function Footer() {
             <Linkedin size={20} />
           </a>
           <a
-            href="https://www.instagram.com/mohanmeesala.05/"
+            href="https://x.com/MohanMeesala05/"
             target="_blank"
             rel="noreferrer"
             className="p-3 rounded-full bg-white/5 hover:bg-blue-600 transition-all text-white hover:scale-110"
           >
-            <Instagram size={20} />
+            <Twitter size={20} />
           </a>
         </div>
         <p className="text-gray-500 text-sm">

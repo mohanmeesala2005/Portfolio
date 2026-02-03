@@ -5,7 +5,7 @@
 @layer base {
   body {
     @apply min-h-screen bg-gradient-to-b from-blue-950 via-gray-900 to-black text-sky-50 antialiased;
-    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-family: 'Roboto', ui-sans-serif, system-ui, -apple-system, sans-serif;
   }
 }
 

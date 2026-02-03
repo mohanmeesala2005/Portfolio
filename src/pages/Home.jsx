@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Instagram, User } from "lucide-react";
+import { Github, Linkedin, Twitter, User } from "lucide-react";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -44,18 +44,18 @@ export default function Home() {
                   <Linkedin size={24} />
                 </a>
                 <a
-                  href="https://www.instagram.com/mohanmeesala.05/"
+                  href="https://x.com/MohanMeesala05/"
                   target="_blank"
                   rel="noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  <Instagram size={24} />
+                  <Twitter size={24} />
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 flex justify-center">
+        <div className="w-full lg:w-1/2 hidden lg:flex justify-center">
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-sky-400 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
             <div className="relative glass-card p-8 rounded-full flex items-center justify-center w-64 h-64 md:w-80 md:h-80">
@@ -71,15 +71,17 @@ export default function Home() {
             <h2 className="section-title">About Me</h2>
             <div className="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
           </div>
-          
+
           <div className="glass-card p-8 md:p-12 grid md:grid-cols-2 gap-12 items-center">
             <div className="text-2xl font-semibold leading-relaxed text-blue-100 border-l-4 border-blue-500 pl-6">
               <p>
                 Hi, I'm Mohan,
-                <br /> 
+                <br />
                 <span className="text-white">nice to meet you.</span>
-                <br /> 
-                <span className="text-sm font-normal text-sky-300 mt-4 block uppercase tracking-widest">Digital Craftsman</span>
+                <br />
+                <span className="text-sm font-normal text-sky-300 mt-4 block uppercase tracking-widest">
+                  Digital Craftsman
+                </span>
               </p>
             </div>
             <div className="text-gray-300 leading-relaxed text-lg">
