@@ -20,7 +20,7 @@ export default function Home() {
             </h4>
             <div className="flex items-center gap-6 pt-4">
               <a
-                href="mailto:mohan@example.com"
+                href="mailto:mohanmeesalawork@gmail.com"
                 className="btn-primary"
                 rel="noreferrer"
               >
