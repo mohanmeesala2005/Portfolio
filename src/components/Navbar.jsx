@@ -26,14 +26,6 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li>
-              <a
-                className="text-gray-300 hover:text-white transition-colors"
-                href="/#about"
-              >
-                About
-              </a>
-            </li>
-            <li>
               <NavLink className={linkClass} to="/skills">
                 Skills
               </NavLink>
@@ -112,15 +104,6 @@ export default function Navbar() {
                 >
                   Home
                 </NavLink>
-              </li>
-              <li>
-                <a
-                  className="text-gray-300 hover:text-white transition-colors"
-                  href="/#about"
-                  onClick={() => setOpen(false)}
-                >
-                  About
-                </a>
               </li>
               <li>
                 <NavLink
