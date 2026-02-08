@@ -6,7 +6,8 @@ import { FileCode, Monitor, ExternalLink } from "lucide-react";
 const PROJECTS = [
   {
     title: "EventHub",
-    description: "A full-stack event management platform to address event coordination challenges faced by organizations in managing and streamlining events.",
+    description:
+      "A full-stack event management platform to address event coordination challenges faced by organizations in managing and streamlining events.",
     links: [
       {
         href: "https://github.com/mohanmeesala2005/EventHub.git",
@@ -17,9 +18,25 @@ const PROJECTS = [
   },
   {
     title: "Intelligent ChatBot",
-    description: "AI-driven retrieval and generation (RAG) to build intelligent chat responses.",
+    description:
+      "AI-driven retrieval and generation (RAG) to build intelligent chat responses.",
     links: [
-      { href: "https://github.com/mohanmeesala2005/RAG_Chatbot.git", label: "Github Link" },
+      {
+        href: "https://github.com/mohanmeesala2005/RAG_Chatbot.git",
+        label: "Github Link",
+      },
+    ],
+    Icons: [FileCode, Monitor],
+  },
+  {
+    title: "Twitter Sentiment Analysis",
+    description:
+      "An NLP-based sentiment classiﬁcation system to analyze large-scale Twitter data and determine public sentiment",
+    links: [
+      {
+        href: "https://github.com/mohanmeesala2005/Twitter_Sentiment_Analysis.git",
+        label: "Github Link",
+      },
     ],
     Icons: [FileCode, Monitor],
   },
