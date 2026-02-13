@@ -30,6 +30,7 @@ export default function Home() {
 
           {/* Main heading */}
           <div className="space-y-4">
+            <span className="text-lg sm:text-xl md:text-2xl text-sky-300/90 font-medium max-w-2xl mx-auto">Hi I'm</span>
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold leading-tight tracking-tight">
               <span className="block bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-sky-300 to-blue-500 animate-gradient">
                 Mohan Meesala
@@ -198,6 +199,14 @@ export default function Home() {
                     </span>
                   </li>
                 </ul>
+                <a
+                  href="mailto:mohanmeesalawork@gmail.com"
+                  className="inline-flex items-center justify-center gap-2 my-6 px-6 py-3.5 border border-white/20 text-gray-100 rounded-xl font-semibold hover:bg-white/10 hover:border-white/30 transition-all duration-300 backdrop-blur-sm"
+                  rel="noreferrer"
+                >
+                  <Mail size={20} />
+                  Contact Me
+                </a>
               </div>
             </div>
 
@@ -218,13 +227,7 @@ export default function Home() {
                       learning and small businesses — focused on React, Node.js,
                       and modern web technologies.
                     </p>
-                  </div>
-                </div>
-              </div>
-
-
-              {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                    <div className="flex flex-col sm:flex-row gap-4 pt-2">
                 <a
                   href="/projects"
                   className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-xl font-semibold hover:from-blue-500 hover:to-blue-400 transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/40 hover:-translate-y-0.5"
@@ -236,15 +239,30 @@ export default function Home() {
                     className="group-hover:translate-x-1 transition-transform"
                   />
                 </a>
-                <a
-                  href="mailto:mohanmeesalawork@gmail.com"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-white/20 text-gray-100 rounded-xl font-semibold hover:bg-white/10 hover:border-white/30 transition-all duration-300 backdrop-blur-sm"
-                  rel="noreferrer"
-                >
-                  <Mail size={20} />
-                  Contact Me
-                </a>
               </div>
+                  </div>
+                </div>
+              </div>
+              {/*Achivement Card*/}
+              <div className="group bg-gradient-to-br from-blue-500/10 via-white/5 to-white/[0.02] p-6 sm:p-8 rounded-2xl border border-white/10 hover:border-blue-500/30 transition-all duration-300 backdrop-blur-sm hover:shadow-xl hover:shadow-blue-500/10">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="p-3 rounded-xl bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
+                    <Code2 size={24} className="text-blue-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">
+                      Achivements
+                    </h3>
+                    <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+                      Secured All India Rank 18 in Amazon Machine Learning Challenge 2025.
+                    </p>
+                    <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+                      Solved 350+ algorithmic problems on LeetCode demonstrating proficiency in DSA and competitive programming.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
